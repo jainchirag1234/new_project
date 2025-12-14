@@ -1,0 +1,30 @@
+GET http://localhost:3000/car
+
+###
+
+POST http://localhost:3000/car/addCar
+content-type: application/json
+
+{
+  "name": "Hyundai Verna",
+  "category": "Sedan",
+  "costPerKm" : 22,
+  "image": "img1.jpg"
+}
+
+###
+
+GET http://localhost:3000/car/cart
+
+###
+
+POST http://localhost:3000/car/add
+content-type: application/json
+
+{
+  "name": "Hyundai Verna",
+  "category": "Sedan",
+  "costPerKm" : 22,
+  "distance" : 10,
+  "image": "img1.jpg"
+}

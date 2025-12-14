@@ -1,0 +1,47 @@
+POST http://localhost:3000/user/register HTTP/1.1
+content-type: application/json
+
+{
+    "name": "John Doe",
+    "email": "john1@example.com",
+    "password": "123456",
+    "gender": "Male",
+    "birthdate": "1999-07-23",
+    "course": "MERN",
+    "hobbies": "Reading,Coding,Music",
+    "address": "New York",
+    "profileImage": "default.jpg"
+}
+
+###
+
+GET http://localhost:3000/user/search?name=Mahanty
+
+###
+
+GET http://localhost:3000/user/68acfc1e23db638f22783e8f HTTP/1.1
+
+###
+
+GET http://localhost:3000/user/ HTTP/1.1
+
+###
+
+PUT http://localhost:3000/user/update/68b711bbe5afb1f54a45290d HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Updated",
+    "email": "updated@example.com",
+    "password": "newpass",
+    "gender": "Male",
+    "birthdate": "1998-01-21",
+    "course": "MCA",
+    "hobbies": "Reading,Gaming",
+    "address": "London"
+}
+
+
+###
+
+DELETE http://localhost:3000/user/delete/68acf79bab3cce6677dac58c HTTP/1.1
