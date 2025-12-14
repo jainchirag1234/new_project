@@ -1,0 +1,33 @@
+GET http://localhost:3000/products
+
+###
+
+POST http://localhost:3000/products/seed
+
+###
+
+GET http://localhost:3000/cart
+
+###
+
+POST http://localhost:3000/cart/add
+content-type: application/json
+
+{
+  "name": "Apple",
+  "price": 50,
+  "image": "https://via.placeholder.com/100"
+}
+
+###
+
+PUT http://localhost:3000/cart/update/64f123456789abcdef123456
+content-type: application/json
+
+{
+  "qty": 3
+}
+
+###
+
+DELETE http://localhost:3000/cart/remove/68ca2365b97526d5d88061f8

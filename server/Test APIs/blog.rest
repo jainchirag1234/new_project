@@ -1,0 +1,29 @@
+GET http://localhost:3000/blog/ HTTP/1.1
+
+###
+
+POST http://localhost:3000/blog/ HTTP/1.1
+content-type: application/json
+
+{
+    "title" : "js",
+    "description" : "shs h sh s",
+    "category" : "falana",
+    "createdBy" : "dhimka"
+}
+
+###
+
+PUT http://localhost:3000/blog/update/68c498eb675d050edb58c72d HTTP/1.1
+content-type: application/json
+
+{
+    "title" : "aa",
+    "description" : "aa",
+    "category" : "aa",
+    "createdBy" : "aa"
+}
+
+###
+
+DELETE  http://localhost:3000/blog/delete/68c48a861058828fdac2ad76 HTTP/1.1
